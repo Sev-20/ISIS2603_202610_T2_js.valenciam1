@@ -1,5 +1,6 @@
 package co.edu.uniandes.dse.TallerPruebas.repositories;
 
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,5 +11,6 @@ import co.edu.uniandes.dse.TallerPruebas.entities.TransactionEntity;
  */
 @Repository
 public interface TransactionRepository extends JpaRepository<TransactionEntity, Long> {
+    List<TransactionEntity> findByAccount_IdOrderByFechaDesc(Long accountId);
 
 }
