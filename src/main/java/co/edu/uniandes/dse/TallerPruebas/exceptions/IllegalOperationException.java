@@ -33,5 +33,9 @@ public class IllegalOperationException extends Exception {
 	public IllegalOperationException(String message) {
 		super(message);
 	}
+
+	public IllegalOperationException(Object message) {
+		//TODO Auto-generated constructor stub
+	}
 }
 
